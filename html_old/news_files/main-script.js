@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$('body').wrapInner('<div class="wrap-body"></div>');$("#yphone").mask("+375 (99) 999-99-99");$("#yphoneiii").mask("+375 (99) 999-99-99");$("#yphone2").mask("+375 (99) 999-99-99");$(".ytel").mask("+375 (99) 999-99-99");});
