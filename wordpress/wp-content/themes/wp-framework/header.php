@@ -65,7 +65,7 @@
                             <span class="txt-logo-int"><?php the_field('second_text'); ?></span>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-lg-rs-in">
+                    <div class="col-lg-3 col-lg-rs-in button-call">
                         <div class="wrap-button">
                             <button class="main-modal-submit" data-form="form-1">ЗАКАЗАТЬ ЗВОНОК</button>
                         </div>

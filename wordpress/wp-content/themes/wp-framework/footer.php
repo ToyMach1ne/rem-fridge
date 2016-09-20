@@ -25,7 +25,7 @@
                         <span class="txt-logo-int"><?php the_field('second_text'); ?></span>
                     </div>
                 </div>
-                <div class="col-lg-3 col-lg-rs-in">
+                <div class="col-lg-3 col-lg-rs-in button-call">
                     <div class="wrap-button">
                         <button class="main-modal-submit" data-form="form-1">ЗАКАЗАТЬ ЗВОНОК</button>
                     </div>
@@ -35,7 +35,6 @@
                         <span><?php the_field('first_telephone'); ?></span>
                         <span><?php the_field('second_telephone'); ?></span>
                         <div class="mode"><?php the_field('work_time'); ?></div>
-                        <div class="copyr">Сайт сделан в <a href="http://wsp-design.by/?utm_source=sites&amp;utm_medium=free&amp;utm_campaign=remservice" target="_blank" rel="nofollow">WSP-Design</a></div>
                     </div>
                 </div>
             </div>
@@ -48,7 +47,7 @@
                 <button class="main-modal-submit" data-form="form-3">Быстрый вызов мастера</button>
             </div>
             <div class="col-lg-6 col-sm-12 cent">Звоните ежедневно с 9 до 21: <strong>+375 (29) 105-28-09, +375 (33) 684-68-44</strong></div>
-            <div class="col-lg-2 col-sm-12 cent"><a href="http://rem-service.by/#top">ВВЕРХ ↑</a></div>
+            <div class="col-lg-2 col-sm-12 cent"><a href="<?php echo home_url(); ?>/#top">ВВЕРХ ↑</a></div>
         </div>
     </div>
     <!--Модальное окно-->
