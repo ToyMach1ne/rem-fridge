@@ -53,7 +53,7 @@
                 <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal('order');return true;">
+          <form action="#" method="post">
             <div class="wrap-input">
               <input type="text" placeholder="Ваше имя" name="firstname" required="">
               <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
@@ -78,8 +78,6 @@
       </div>
         </section>
         <div class="text-content">
-            <!-- <div class="services-block wrap container-fluid wrap_breadcrumbs">
-  </div> -->
             <article id="post-209" class="post-209 post type-post status-publish format-standard has-post-thumbnail hentry category-brendy-stiralnyx-mashin">
                 <header class="entry-header">
                 <h1 class="entry-title"> Ремонт холодильников <?php the_title(); ?> </h1>
@@ -99,9 +97,7 @@
     while ( have_rows('eroor_code') ) : the_row(); ?>
                 <li><strong><?php the_sub_field('number'); ?></strong>
                 <?php the_sub_field('desc'); ?></li>
-              <?php endwhile; else :
-                // no rows found
-                 endif; ?>
+              <?php endwhile; endif; ?>
             </ul>
             <p>&nbsp;</p>
         </section>
@@ -110,7 +106,7 @@
                 <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal('order');return true;">
+          <form action="#" method="post">
             <div class="wrap-input">
               <input type="text" placeholder="Ваше имя" name="firstname" required="">
               <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
@@ -162,9 +158,7 @@
           </div>
         </div>
       </div>
-      <?php endwhile; else :
-                // no rows found
-                 endif; ?>
+      <?php endwhile; endif; ?>
     </div>
         </section>
         <noindex>
@@ -182,9 +176,7 @@
                                 <strong>Выполненная работа: </strong><?php the_sub_field('job_done'); ?>
                                 <br><strong>Марка:</strong> <?php the_sub_field('brand'); ?></div>
                         </div>
-                        <?php endwhile; else :
-                // no rows found
-                 endif; ?>
+                        <?php endwhile; endif; ?>
                     </div>
 
 
@@ -196,7 +188,7 @@
                 <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal('order');return true;">
+          <form action="#" method="post">
             <div class="wrap-input">
               <input type="text" placeholder="Ваше имя" name="firstname" required="">
               <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">

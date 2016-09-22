@@ -61,7 +61,7 @@
       fridge-form-bg      ">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal('order');return true;">
+          <form action="#" method="post">
             <div class="wrap-input">
               <input type="text" placeholder="Ваше имя" name="firstname" required="">
               <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">

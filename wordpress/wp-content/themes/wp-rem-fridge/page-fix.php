@@ -7,11 +7,10 @@
         <?php query_posts("order=ASC&showposts=50&cat=12"); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail( 'style=width=124;height:88;'); ?>
-
+            <?php the_post_thumbnail('thumbnail'); ?>
             </a>
             <?php endwhile; endif; ?>
-                                <?php wp_reset_query(); ?>
+             <?php wp_reset_query(); ?>
         </div>
         <div class="wrap-button wrap-button-center">
             <button class="main-modal-submit" data-header="Вызвать мастера по ремонту стиральных машин" data-form="form-3">Вызвать мастера</button>

@@ -1,9 +1,11 @@
 <?php /* Template Name: Page Contacts */ get_header(); ?>
     <div class="services-block wrap container-fluid wrap_breadcrumbs">
-    <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-    <a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a>
-            </span>
-            </div>
+      <div class="breadcrumbs">
+        <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="<?php echo home_url(); ?>" itemprop="url">
+        <span itemprop="title">Главная</span></a>
+        </span>
+      </div>
         <!-- .breadcrumbs -->
     </div>
     <div class="wrap container-fluid">

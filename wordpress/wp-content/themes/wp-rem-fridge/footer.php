@@ -1,15 +1,13 @@
      <div class="wrap_bottom_menu">
         <div class="wrap container-fluid bottom_menu">
             <div class="menu-nizhnee-menyu-rubriki-container">
-                <ul id="menu-nizhnee-menyu-rubriki" class="menu">
                     <?php wpeFootNav(); ?>
-                </ul>
             </div>
         </div>
     </div>
   <footer class="footer">
         <div class="data-block wrap container-fluid">
-        <?php query_posts('page_id=30'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
+          <?php query_posts('page_id=30'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
             <div class="row">
                 <div class="col-lg-6">
                     <figure class="logo">
@@ -42,13 +40,15 @@
         </div>
     </footer>
     <div class="botpanel">
+    <?php query_posts('page_id=30'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
         <div class="row">
             <div class="col-lg-4 col-sm-12">
-                <button class="main-modal-submit" data-form="form-3">Быстрый вызов мастера</button>
+                <button class="main-modal-submit" data-form="form-3"><?php the_field('bar_title'); ?></button>
             </div>
-            <div class="col-lg-6 col-sm-12 cent">Звоните ежедневно с 9 до 21: <strong>+375 (29) 105-28-09, +375 (33) 684-68-44</strong></div>
+            <div class="col-lg-6 col-sm-12 cent"><?php the_field('call_time'); ?> <strong><?php the_field('first_bar_phone'); ?>, <?php the_field('second_bar_phone'); ?></strong></div>
             <div class="col-lg-2 col-sm-12 cent"><a href="<?php echo home_url(); ?>/#top">ВВЕРХ ↑</a></div>
         </div>
+        <?php endwhile; endif; wp_reset_query(); ?>
     </div>
     <!--Модальное окно-->
     <div class="form-wrapper-main-modal" data-form="form-1">
@@ -56,7 +56,7 @@
             <div class="main-modal-block-int">
                 <div class="main-modal-block-form">
                     <div class="modal-close"></div>
-                    <form class="main-modal-form" action="http://rem-service.by/send.php" method="post" name="form_data" onsubmit="yaCounter34596230.reachGoal(&#39;call&#39;);return true;">
+                    <form class="main-modal-form" action="#" method="post">
                         <div class="modal-zag">Мы перезвоним в течение 10 минут!</div>
                         <input class="main-modal-name" name="firstname" type="text" placeholder="Ваше Имя" required="">
                         <input class="main-modal-tel" name="phone" type="tel" placeholder="Ваш Телефон" id="yphone2" required="">
@@ -72,7 +72,7 @@
             <div class="main-modal-block-int">
                 <div class="main-modal-block-form">
                     <div class="modal-close"></div>
-                    <form class="main-modal-brand-form" action="http://rem-service.by/send.php" method="post" name="form_data" onsubmit="yaCounter34596230.reachGoal(&#39;call&#39;);return true;">
+                    <form class="main-modal-brand-form" action="#" method="post">
                         <div class="modal-zag modal-zag3">Быстрый вызов мастера на дом</div>
                         <input class="main-modal-name" name="firstname" type="text" placeholder="Ваше имя" required="">
                         <input class="main-modal-tel" name="phone" type="tel" id="yphone" placeholder="Ваш телефон" required="">
@@ -88,7 +88,7 @@
             <div class="main-modal-block-int">
                 <div class="main-modal-block-form">
                     <div class="modal-close"></div>
-                    <form class="main-modal-problem-form" action="http://rem-service.by/send.php" method="post" name="form_data" onsubmit="yaCounter34596230.reachGoal(&#39;order&#39;);return true;">
+                    <form class="main-modal-problem-form" action="#">
                         <div class="modal-zag"></div>
                         <input class="main-modal-name" name="firstname" type="text" placeholder="Ваше имя" required="">
                         <input class="main-modal-tel" name="phone" type="tel" id="yphoneiii" placeholder="Ваш телефон" required="">

@@ -12,8 +12,6 @@
         </div>
         <h2 class="h2-style-price">Цена услуги (с запчастями): <?php the_field('price'); ?> рублей.</h2>
         <div class="text-content">
-            <!-- <div class="services-block wrap container-fluid wrap_breadcrumbs">
-  </div> -->
             <article id="post-4085" class="post-4085 post type-post status-publish format-standard hentry category-uzly-stiralnyx-mashin">
                 <header class="entry-header">
                     <h1 class="entry-title"> <?php the_title(); ?> </h1>
@@ -33,7 +31,7 @@
                     <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal('order');return true;">
+          <form action="#" method="post">
             <div class="wrap-input">
               <input type="text" placeholder="Ваше имя" name="firstname" required="">
               <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
@@ -56,8 +54,8 @@
           </div>
         </div>
       </div>
-                </div>
-            </section>
+    </div>
+ </section>
             <section class="guarantee guarantee-index">
                 <div class="wrap container-fluid">
     <?php if( have_rows('support_mark' , '68') ):
@@ -79,16 +77,14 @@
           </div>
         </div>
       </div>
-      <?php endwhile; else :
-                // no rows found
-                 endif; ?>
+      <?php endwhile; endif; ?>
     </div>
             </section>
             <section class="clients">
                 <h2 class="h2-style">Отзывы наших клиентов</h2>
                 <div class="wrap-clients">
                 <?php if( have_rows('comment', '68') ):
-    while ( have_rows('comment', '68') ) : the_row(); ?>
+                while ( have_rows('comment', '68') ) : the_row(); ?>
                     <div class="wrap container-fluid">
                         <div class="client-block-content">
                             <span class="client-title"><?php the_sub_field('name_title'); ?></span>
@@ -99,9 +95,7 @@
                                 <br><strong>Марка:</strong> <?php the_sub_field('brand'); ?></div>
                         </div>
                     </div>
-                    <?php endwhile; else :
-                // no rows found
-                 endif; ?>
+                    <?php endwhile; endif; ?>
 
                 </div>
             </section>
@@ -111,7 +105,7 @@
                 <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal('order');return true;">
+          <form action="#" method="post">
             <div class="wrap-input">
               <input type="text" placeholder="Ваше имя" name="firstname" required="">
               <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
@@ -142,11 +136,11 @@
         <?php query_posts("order=ASC&showposts=50&cat=12"); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail( 'style=width=124;height:88;'); ?>
+            <?php the_post_thumbnail('thumbnail'); ?>
 
             </a>
             <?php endwhile; endif; ?>
-                                <?php wp_reset_query(); ?>
+            <?php wp_reset_query(); ?>
         </div>
         <div class="problem-list">
     <h2 class="h2-style">Устраняем все поломки</h2>

@@ -1,9 +1,9 @@
 <?php
-define('DB_NAME', 'p284179_saitde3');
-define('DB_USER', 'p284179_saitde3');
-define('DB_PASSWORD', 'x7p3Rpq4qy');
+define('DB_NAME', 'fridge');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
 
-define('DB_HOST', 'p284179.mysql.ihc.ru');
+define('DB_HOST', 'localhost');
 
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');

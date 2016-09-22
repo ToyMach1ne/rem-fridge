@@ -7,8 +7,7 @@
                 <div class="col-lg-9 cont-block">
                     <div class="wrap container-fluid wrap_breadcrumbs sovet">
                         <div class="breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo home_url(); ?>" itemprop="url"><span itemprop="title">Главная</span></a>
-                            </span> <span class="sep">›</span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://rem-service.by/category/poleznye-sovety/" itemprop="url"><span itemprop="title">Полезные советы</span></a>
-                            </span> <span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
+                            </span><span class="sep">›</span> <span class="current"><?php the_title(); ?></span></div>
                         <!-- .breadcrumbs -->
                     </div>
                     <h1><?php the_title(); ?></h1>
@@ -20,9 +19,9 @@
                         <section class="block-form wrap container-fluid">
                             <div class="wrap-form wrap-form-int">
                                 <div class="wrapper-form-int">
-                                    <div class="application2">Нужен ремонт стиральной машины? Оставьте заявку!</div>
+                                    <div class="application2">Нужен ремонт холодильника? Оставьте заявку!</div>
                                     <div class="wrapper-form">
-                                        <form action="http://rem-service.by/send.php" method="post" onsubmit="yaCounter34596230.reachGoal(&#39;order&#39;);return true;">
+                                        <form action="#" method="post">
                                             <div class="wrap-input">
                                                 <input type="text" placeholder="Ваше имя" name="firstname" required="">
                                                 <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
