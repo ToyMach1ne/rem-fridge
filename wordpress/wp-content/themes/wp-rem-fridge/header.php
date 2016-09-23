@@ -48,30 +48,21 @@
             </div>
         </div>
         <div class="block-forma wrap container-fluid">
-            <?php query_posts('page_id=30'); if ( have_posts() ) : while ( have_posts() ) : the_post();?>
             <div class="form-top-info">
                 <h1 class="zag-h1">
             <?php the_field('site_slogan'); ?>
                   </h1>
-                <span class="span-zag"><?php the_field('under_slogan'); ?></span>
-                <span class="span-zag-in"><?php the_field('second_underslogan'); ?></span>
+                <span class="span-zag"><?php the_field('under_slogan' , 30); ?></span>
+                <span class="span-zag-in"><?php the_field('second_underslogan' , 30); ?></span>
             </div>
 
             <div class="wrap-form form-bg
       fridge-form-bg      ">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="#" method="post">
-            <div class="wrap-input">
-              <input type="text" placeholder="Ваше имя" name="firstname" required="">
-              <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
-
-              </div>
-            <textarea name="comm" placeholder="Кратко опишите проблему. Например: не включается, течет и т.д."></textarea><input type="hidden" name="type" value="rem">
-            <input type="submit" value="Отправить заявку на ремонт"></form>
+          <?php echo do_shortcode('[contact-form-7 id="186" title="form"]'); ?>
         </div>
       </div>
-            <?php endwhile; endif; wp_reset_query(); ?>
         </div>
         <section class="block-info">
         <div class="wrap container-fluid">

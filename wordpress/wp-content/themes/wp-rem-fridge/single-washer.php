@@ -53,23 +53,7 @@
                 <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="#" method="post">
-            <div class="wrap-input">
-              <input type="text" placeholder="Ваше имя" name="firstname" required="">
-              <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
-              <select name="brand">
-                <option value="no" selected="">Бренд холодильника</option>
-
-                                    <option value="Ariston">Ariston</option>
-                                    <option value="Electrolux">Electrolux</option>
-                                    <option value="Indesit">Indesit</option>
-                                    <option value="LG">LG</option>
-                                    <option value="Samsung">Samsung</option>
-                                    <option value="Stinol">Stinol</option>
-                                    <option value="Атлант">Атлант</option>
-                                              </select></div>
-            <textarea name="comm" placeholder="Кратко опишите проблему. Например: не включается, течет и т.д."></textarea><input type="hidden" name="type" value="rem">
-            <input type="submit" value="Отправить заявку на ремонт"></form>
+          <?php echo do_shortcode('[contact-form-7 id="186" title="form"]'); ?>
           <div class="tel-form">
             <span>Или звоните:</span>
             +375(29) 105-28-09 (вел), +375 (33) 684-68-44 (мтс)
@@ -106,23 +90,7 @@
                 <div class="wrapper-form-int wrapper-form-int-fridge">
         <div class="application2">Оставьте заявку, мастер свяжется с вами в течение 10 минут!</div>
         <div class="wrapper-form">
-          <form action="#" method="post">
-            <div class="wrap-input">
-              <input type="text" placeholder="Ваше имя" name="firstname" required="">
-              <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
-              <select name="brand">
-                <option value="no" selected="">Бренд холодильника</option>
-
-                                    <option value="Ariston">Ariston</option>
-                                    <option value="Electrolux">Electrolux</option>
-                                    <option value="Indesit">Indesit</option>
-                                    <option value="LG">LG</option>
-                                    <option value="Samsung">Samsung</option>
-                                    <option value="Stinol">Stinol</option>
-                                    <option value="Атлант">Атлант</option>
-                                              </select></div>
-            <textarea name="comm" placeholder="Кратко опишите проблему. Например: не включается, течет и т.д."></textarea><input type="hidden" name="type" value="rem">
-            <input type="submit" value="Отправить заявку на ремонт"></form>
+          <?php echo do_shortcode('[contact-form-7 id="186" title="form"]'); ?>
           <div class="tel-form">
             <span>Или звоните:</span>
             +375(29) 105-28-09 (вел), +375 (33) 684-68-44 (мтс)
@@ -219,7 +187,7 @@
         <?php query_posts("order=ASC&showposts=50&cat=8"); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <a href="<?php the_permalink(); ?>">
-            <?php the_post_thumbnail( 'style=width=124;height:88;'); ?>
+            <?php the_post_thumbnail(); ?>
 
             </a>
             <?php endwhile; endif; ?>

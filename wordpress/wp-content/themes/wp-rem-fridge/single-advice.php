@@ -21,47 +21,7 @@
                                 <div class="wrapper-form-int">
                                     <div class="application2">Нужен ремонт холодильника? Оставьте заявку!</div>
                                     <div class="wrapper-form">
-                                        <form action="#" method="post">
-                                            <div class="wrap-input">
-                                                <input type="text" placeholder="Ваше имя" name="firstname" required="">
-                                                <input type="tel" placeholder="Ваш телефон" name="phone" class="ytel" required="">
-                                                <select name="brand">
-                                                    <option value="no" selected="">Бренд стиральной машины</option>
-                                                    <option value="AEG">AEG</option>
-                                                    <option value="Ardo">Ardo</option>
-                                                    <option value="Ariston">Ariston</option>
-                                                    <option value="Asko">Asko</option>
-                                                    <option value="Bauknecht">Bauknecht</option>
-                                                    <option value="Beko">Beko</option>
-                                                    <option value="Bosch">Bosch</option>
-                                                    <option value="Brandt">Brandt</option>
-                                                    <option value="Candy">Candy</option>
-                                                    <option value="Daewoo">Daewoo</option>
-                                                    <option value="Electrolux">Electrolux</option>
-                                                    <option value="Euronova">Euronova</option>
-                                                    <option value="General Electric">General Electric</option>
-                                                    <option value="Gorenje">Gorenje</option>
-                                                    <option value="Hansa">Hansa</option>
-                                                    <option value="Indesit">Indesit</option>
-                                                    <option value="Kaiser">Kaiser</option>
-                                                    <option value="LG">LG</option>
-                                                    <option value="Miele">Miele</option>
-                                                    <option value="Otsein">Otsein</option>
-                                                    <option value="Philco">Philco</option>
-                                                    <option value="Privileg">Privileg</option>
-                                                    <option value="Rosieres">Rosieres</option>
-                                                    <option value="Samsung">Samsung</option>
-                                                    <option value="Siemens">Siemens</option>
-                                                    <option value="Thomson">Thomson</option>
-                                                    <option value="Whirlpool">Whirlpool</option>
-                                                    <option value="Zanussi">Zanussi</option>
-                                                    <option value="Атлант">Атлант</option>
-                                                </select>
-                                            </div>
-                                            <textarea name="comm" placeholder="Кратко опишите проблему. Например: не включается, течет и т.д."></textarea>
-                                            <input type="hidden" name="type" value="rem">
-                                            <input type="submit" value="Отправить заявку на ремонт">
-                                        </form>
+                                        <?php echo do_shortcode('[contact-form-7 id="186" title="form"]'); ?>
                                         <div class="tel-form">
                                             <span>Или звоните:</span> +375(29) 105-28-09 (вел), +375 (33) 684-68-44 (мтс)
                                         </div>
