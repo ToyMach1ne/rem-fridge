@@ -45,7 +45,7 @@
             <div class="col-lg-4 col-sm-12">
                 <button class="main-modal-submit" data-form="form-3"><?php the_field('bar_title'); ?></button>
             </div>
-            <div class="col-lg-6 col-sm-12 cent"><?php the_field('call_time'); ?> <strong><?php the_field('first_bar_phone'); ?>, <?php the_field('second_bar_phone'); ?></strong></div>
+            <div class="col-lg-6 col-sm-12 cent"><?php the_field('call_time'); ?> <strong><?php the_field('phone_number'); ?>, <?php the_field('second_phone_number'); ?></strong></div>
             <div class="col-lg-2 col-sm-12 cent"><a href="<?php echo home_url(); ?>/#top">ВВЕРХ ↑</a></div>
         </div>
         <?php endwhile; endif; wp_reset_query(); ?>
@@ -56,13 +56,7 @@
             <div class="main-modal-block-int">
                 <div class="main-modal-block-form">
                     <div class="modal-close"></div>
-                    <form class="main-modal-form" action="#" method="post">
-                        <div class="modal-zag">Мы перезвоним в течение 10 минут!</div>
-                        <input class="main-modal-name" name="firstname" type="text" placeholder="Ваше Имя" required="">
-                        <input class="main-modal-tel" name="phone" type="tel" placeholder="Ваш Телефон" id="yphone2" required="">
-                        <input type="hidden" name="type" value="zvonok">
-                        <input type="submit" class="submit-modal" value="Перезвоните мне!">
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="189" title="footer form"]'); ?>
                 </div>
             </div>
         </div>
@@ -72,12 +66,7 @@
             <div class="main-modal-block-int">
                 <div class="main-modal-block-form">
                     <div class="modal-close"></div>
-                    <form class="main-modal-brand-form" action="#" method="post">
-                        <div class="modal-zag modal-zag3">Быстрый вызов мастера на дом</div>
-                        <input class="main-modal-name" name="firstname" type="text" placeholder="Ваше имя" required="">
-                        <input class="main-modal-tel" name="phone" type="tel" id="yphone" placeholder="Ваш телефон" required="">
-                        <input type="submit" class="submit-modal" value="Вызвать мастера">
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="189" title="footer form"]'); ?>
                 </div>
             </div>
         </div>
@@ -88,14 +77,7 @@
             <div class="main-modal-block-int">
                 <div class="main-modal-block-form">
                     <div class="modal-close"></div>
-                    <form class="main-modal-problem-form" action="#">
-                        <div class="modal-zag"></div>
-                        <input class="main-modal-name" name="firstname" type="text" placeholder="Ваше имя" required="">
-                        <input class="main-modal-tel" name="phone" type="tel" id="yphoneiii" placeholder="Ваш телефон" required="">
-                        <input type="hidden" name="type" value="problemvs">
-                        <input type="hidden" name="brand" class="inpbr">
-                        <input type="submit" class="submit-modal" value="Вызвать мастера">
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="189" title="footer form"]'); ?>
                 </div>
             </div>
         </div>
